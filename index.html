@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Pact of the Damned</title>
+<link rel="stylesheet" href="src/styles.css" />
+</head>
+<body>
+  <div id="app">
+    <canvas id="game" width="1280" height="720"></canvas>
+    <div id="ui"></div>
+  </div>
+
+  <!-- Namespace + engine -->
+  <script src="src/main.js"></script>
+  <script src="src/engine/rng.js"></script>
+  <script src="src/engine/input.js"></script>
+  <script src="src/engine/canvas.js"></script>
+  <script src="src/engine/spatialHash.js"></script>
+  <script src="src/engine/loop.js"></script>
+
+  <!-- Data -->
+  <script src="src/data/heroes.js"></script>
+  <script src="src/data/enemies.js"></script>
+  <script src="src/data/skills.js"></script>
+  <script src="src/data/pacts.js"></script>
+  <script src="src/data/waves.js"></script>
+
+  <!-- Meta -->
+  <script src="src/meta/storage.js"></script>
+
+  <!-- Audio -->
+  <script src="src/audio/sfx.js"></script>
+  <script src="src/audio/music.js"></script>
+
+  <!-- Render -->
+  <script src="src/render/pixelArt.js"></script>
+  <script src="src/render/sprites.js"></script>
+  <script src="src/render/heroGifs.js"></script>
+  <script src="src/render/particles.js"></script>
+  <script src="src/render/damageNumbers.js"></script>
+
+  <!-- Game systems -->
+  <script src="src/game/state.js"></script>
+  <script src="src/game/effects.js"></script>
+  <script src="src/game/player.js"></script>
+  <script src="src/game/enemies.js"></script>
+  <script src="src/game/projectiles.js"></script>
+  <script src="src/game/enemyProjectiles.js"></script>
+  <script src="src/game/xp.js"></script>
+  <script src="src/game/ally.js"></script>
+  <script src="src/game/spawner.js"></script>
+  <script src="src/game/levelup.js"></script>
+  <script src="src/game/pact.js"></script>
+  <script src="src/game/boss.js"></script>
+
+  <!-- UI -->
+  <script src="src/ui/hud.js"></script>
+  <script src="src/ui/cards.js"></script>
+  <script src="src/ui/altar.js"></script>
+  <script src="src/ui/bossReward.js"></script>
+  <script src="src/ui/menu.js"></script>
+
+  <!-- Scenes -->
+  <script src="src/scenes/menu.js"></script>
+  <script src="src/scenes/heroSelect.js"></script>
+  <script src="src/scenes/run.js"></script>
+  <script src="src/scenes/gameover.js"></script>
+
+  <!-- Boot -->
+  <script src="src/boot.js"></script>
+</body>
+</html>
